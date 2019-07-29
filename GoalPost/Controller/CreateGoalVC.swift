@@ -8,6 +8,9 @@
 
 import UIKit
 
+
+
+
 class CreateGoalVC: UIViewController, UITextViewDelegate {
 
     @IBOutlet weak var goalTextView: UITextView!
@@ -46,11 +49,14 @@ class CreateGoalVC: UIViewController, UITextViewDelegate {
         longTermBtn.deselectColor()
         
     }
+    
+    
     @IBAction func longBtnPressed(_ sender: Any) {
         goalType = .longTerm
         longTermBtn.setSelectedColor()
         shortTermBtn.deselectColor()
     }
+    
     
     @IBAction func backBtnPressed(_ sender: Any) {
         // go back to GoalVC
